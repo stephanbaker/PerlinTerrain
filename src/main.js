@@ -24,12 +24,11 @@ stats.showPanel( 0 );
 document.body.appendChild( stats.dom );
 
 var light = new THREE.DirectionalLight(Colors.LightColor, 1.3);
-light.position.set(camera.position.x, camera.position.y, camera.position.z).normalize();
+light.position.set(camera.position.x, camera.position.y+500, camera.position.z+500).normalize();
 scene.add(light);
 
 // Setup the terrain
 var geometry = new THREE.PlaneBufferGeometry( 2000, 2000, 256, 256 );
-geometry.dynamic = true;
 var material = new THREE.MeshLambertMaterial({color: Colors.TerrainColor});
 var terrain = new THREE.Mesh( geometry, material );
 terrain.rotation.x = -Math.PI / 2;
