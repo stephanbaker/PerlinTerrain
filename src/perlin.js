@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-//credit: https://gist.github.com/banksean/304522
+//credit: https://gist.github.com/banksean/304522#file-perlin-noise-simplex-js
 
 class Perlin {
     constructor() {
